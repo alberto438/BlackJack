@@ -206,6 +206,7 @@ manocrupier al valor del array nuevamanocrupier*/
                 System.out.println("Felicidades");
             }else if (valormanocrupier == 21 && totalMano == 21){
                 System.out.println("Empate");
+                break;
             }
         }
         return manocrupier;
