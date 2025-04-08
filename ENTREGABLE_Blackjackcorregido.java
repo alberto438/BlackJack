@@ -296,7 +296,7 @@ hecho blackjack */
                 }
 // En caso de que no pida mas cartas break para pasar a la siguiente tarea
 
-            }else if(respuesta.equals("s")){
+            }else if(respuesta.equals("n")){
                 System.out.println("Por tu cara, parece que no quieres mas cartas");
                 break;
             }
