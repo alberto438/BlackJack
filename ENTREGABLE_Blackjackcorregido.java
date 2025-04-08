@@ -269,7 +269,7 @@ manocrupier al valor del array nuevamanocrupier*/
 
 // Aqui pregunto al usuario si quiere otra carta o decide plantarse
 
-            System.out.println("¿Quieres otra carta?");
+            System.out.println("¿Quieres otra carta s/n?");
             String respuesta = scanner.nextLine().toLowerCase();
             if (respuesta.equals("s")) {
                 String nuevaCarta = darCarta(mazo);
@@ -283,6 +283,7 @@ utilice con la mano del crupier */
                 nuevaMano[mano.length] = nuevaCarta;
                 mano = nuevaMano;
                 totalMano = valorMano(mano);
+            
                 
 /*  Condiciono la condicion de seguir robando según si se ha pasado o ha alcanzado 21 y ha
 hecho blackjack */ 
@@ -295,9 +296,12 @@ hecho blackjack */
                 }
 // En caso de que no pida mas cartas break para pasar a la siguiente tarea
 
-            }else {
+            }else if(respuesta.equals("s")){
                 System.out.println("Por tu cara, parece que no quieres mas cartas");
                 break;
+            }
+            else{
+                System.out.println("Disculpa, no te he entendido bien, prueba otra vez.");
             }
         }
 
